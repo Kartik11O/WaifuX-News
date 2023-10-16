@@ -1,0 +1,21 @@
+#SEC-4{
+    position: relative;
+    width: clamp(300px,100%,100%);
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2DFD2;
+}
+
+#Container-4{
+    width: 100%;
+    height: max-content;
+    /* border: 2px solid black; */
+}
+
+#Cover-Img{
+    width: 100%;
+    height: max-content;
+border: 2px solid pink;
+}

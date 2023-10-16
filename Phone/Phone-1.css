@@ -1,0 +1,93 @@
+html{
+    font-size: 50%;
+}
+#Video-TOP-Wapper video {
+    position: absolute;
+}
+.h2-Headline-TOP {
+    font-size: 2rem;
+}
+#Box2 h1 {
+    font-size: 2rem;
+}
+#Box2 h1::first-letter {
+    font-size: 8rem;
+}
+#Navbar {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    display: none;
+}
+
+#CONTAINER {
+    overflow-x: scroll;
+}
+#PIC-1 {
+    width: clamp(268px,29vw,448px);
+}
+#Text-2 {
+    width: clamp(290px,29vw,445px);
+}
+#Text-2-p {
+    font-size: 1.4rem;
+    width: clamp(265px,27vw,414px);
+}
+#PIC-3 {
+    width: clamp(271px,29vw,448px);
+}
+#Part-2-IMG {
+    width: clamp(275px,29vw,448px);
+}
+#Part-3-Para-1 {
+    font-family: var(--Headline);
+    width: clamp(300px,96%,529px);
+    font-size: 1.9rem;
+}
+#BTN-Designer {
+    position: absolute;
+    top: 10px;
+    height: clamp(320px,48vh,320px);
+    z-index: 9;
+}
+.BTNS-ALL-2 {
+    width: clamp(92px,6vw,92px);
+}
+#BTN-Designer-2 {
+  width: clamp(122px,8vw,122px);
+  bottom: 52px;
+  z-index: 9;
+}
+#Wapper-IMG-4 {
+    width: 218px;
+    height: 316px;
+}
+
+.Headline-BTN {
+    font-size: 6rem;
+    margin: revert;
+    z-index: 19;
+}
+.BTN-Wapper:hover {
+    background-color: white;
+    color: #000;
+    border-radius: 0px;
+    letter-spacing: 0px;
+}
+#Headline-Container-4-2 {
+    right: -33px;
+    width: clamp(166px,52vw,798px);
+  height: clamp(300px,44vh,314px);
+}
+#Wapper-IMG-4-2 {
+    background-image: url(https://i.pinimg.com/564x/9b/6f/47/9b6f47003aad540dc31db4848c6be10d.jpg);
+    width: 166px;
+    height: 314px;
+}
+#BTN-Click {
+    z-index: 99999;
+}

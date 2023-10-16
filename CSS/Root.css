@@ -1,0 +1,83 @@
+:root{
+    --font:'Aboreto', cursive;
+    --Headline: 'Roboto Condensed', sans-serif;
+}
+html{
+  /* background: #ff000047; */
+  scroll-behavior: smooth;
+}
+
+.show{
+    animation: h 1s both;
+}
+@font-face {
+  font-family: "Logo";
+  src: url(OstrichSans-Bold.otf);
+}
+@keyframes h {
+    0%{
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(10px);
+    }
+    
+}
+#loading {
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   z-index: 99999;
+   background-color: #000;
+  }
+  
+  .one {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.5rem;
+    animation: loadingg 2.5s ease-in-out infinite;
+  }
+  
+  @keyframes loadingg {
+    0%,
+    100% {
+      transform: scale(0.2);
+      background-color: #929292;
+    }
+    42% {
+      background-color: #3d3d3d;
+    }
+    50% {
+      transform: scale(1);
+      background-color: #000000b8;
+    }
+  }
+  
+  .one:nth-child(0) {
+    animation-delay: 0s;
+  }
+  .one:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .one:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .one:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .one:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  .one:nth-child(5) {
+    animation-delay: 1s;
+  }
+
+
+  /* .BTNS-ALL:hover{
+    transform: translateY(10px) translateX(-4px);
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+} */

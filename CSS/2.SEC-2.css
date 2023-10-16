@@ -1,0 +1,60 @@
+#SEC-2{
+    position: relative;
+    width: clamp(300px,100%,100%);
+    height: 138vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #a38a3c; */
+    background: #E2DFD2;
+    /* background: #F9F6EE; */
+}
+
+.Trending-Container{
+    position: relative;
+    width: 100%;
+    height: 19vh;
+    display: flex;
+    align-items: center;
+}
+
+.Trending{
+    font-size: 3rem;
+    font-family: 'Major Mono Display', monospace;
+    margin-left: 2rem;
+    border-bottom: 2px solid black;
+}
+
+#Trending-info-wapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#Row-1{
+    width: 95vw;
+    height: 55vh;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Line{
+    position: absolute;
+    width: 93%;
+    height: 6px;
+    background-color: #080808;
+
+}
+.Line2{
+    position: absolute;
+    bottom: 235px;
+    width: 93%;
+    height: 6px;
+    background-color: #ED760E;
+
+}

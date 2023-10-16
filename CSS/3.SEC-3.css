@@ -1,0 +1,25 @@
+#SEC-3{
+    position: relative;
+    width: clamp(300px,100%,100%);
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:#E2DFD2;
+}
+#Trending-info-wapper-2{
+    width: 100%;
+    height:max-content;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#Row-2{
+    width: 95vw;
+    height:max-content;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
