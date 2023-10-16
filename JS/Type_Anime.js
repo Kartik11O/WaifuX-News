@@ -65,7 +65,7 @@ var variables = {
 let headers = new Headers();
 let ListApi = fetch('https://graphql.anilist.co', {
   method: 'POST',
-  mode: 'no-cors',
+  // mode: 'no-cors',
   header: headers,
   body: JSON.stringify({
     query: query,
