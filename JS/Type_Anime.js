@@ -1,8 +1,3 @@
-
-
-
-
-
 var query = `
 query ($page: Int, $perPage: Int, $search: String) {
     Page(page: $page, perPage: $perPage) {
@@ -62,11 +57,15 @@ var variables = {
   perPage: 10
 };
 
-let headers = new Headers();
+
+
+
 let ListApi = fetch('https://graphql.anilist.co', {
   method: 'POST',
-  // mode: 'no-cors',
-  header: headers,
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  },
   body: JSON.stringify({
     query: query,
     variables: variables,
@@ -83,21 +82,21 @@ ListApi.then((DataReq) => DataReq.json())
     let banner = VV.data.Page.media[1].bannerImage
     console.log(banner)
 
-//       function New(){
+    //       function New(){
 
-//      console.log(';asd')
-//         let Test = `
-//         <div id="Cover-Img">
-//           <img src="${banner}"  style="height: 100%; width: 100%;" alt="">
-//           </div>
-        
-//   `
-//   document.getElementById("Container-4").innerHTML = Test
-// }
-    
-    
-    
-    
+    //      console.log(';asd')
+    //         let Test = `
+    //         <div id="Cover-Img">
+    //           <img src="${banner}"  style="height: 100%; width: 100%;" alt="">
+    //           </div>
+
+    //   `
+    //   document.getElementById("Container-4").innerHTML = Test
+    // }
+
+
+
+
     DD.map((items) => {
       let Poster_Anime = items.coverImage.extraLarge
       let Name_Anime = items.title.romaji
@@ -111,32 +110,29 @@ ListApi.then((DataReq) => DataReq.json())
       <p class="card__title">${Name_Anime}</p>
       <p class="card__description"></p>
     </div>
-    <div class="IMGholder" style="background-image: url(${Poster_Anime});"></div>
+    <div class="IMGholder" style="background-image: url(${Poster_Anime});">
+    </div>
 
-      // <h2 class="Anime-Headline">${Name_Anime}</h2>
-      // <span class="Anime-GEN">${gen[0]}</span>
-      // <span class="Anime-GEN">${gen[1]}</span>
-      // <span class="Anime-GEN">${gen[2]}</span>
+       <h2 class="Anime-Headline">${Name_Anime}</h2>
+       <span class="Anime-GEN">${gen[0]}</span>
+       <span class="Anime-GEN">${gen[1]}</span>
+       <span class="Anime-GEN">${gen[2]}</span>
 
     </div>
     
        `
-      
+
+
+      document.getElementById("Row-1").innerHTML += Pic_Container
 
 
 
 
-
-      document.getElementById("Row-1").innerHTML += Pic_Container 
-  
-   
-    
-    
 
     })
 
-  
-  
+
+
   })
 
 
