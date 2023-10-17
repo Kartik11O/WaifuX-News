@@ -47,6 +47,11 @@ query ($page: Int, $perPage: Int, $search: String) {
         genres
         episodes
         duration
+        status
+        popularity
+        averageScore
+        season
+        
       }
     }
   }
@@ -81,34 +86,28 @@ ListApi.then((DataReq) => DataReq.json())
     let DD = VV.data.Page.media
     let banner = VV.data.Page.media[1].bannerImage
     console.log(banner)
-
-    //       function New(){
-
-    //      console.log(';asd')
-    //         let Test = `
-    //         <div id="Cover-Img">
-    //           <img src="${banner}"  style="height: 100%; width: 100%;" alt="">
-    //           </div>
-
-    //   `
-    //   document.getElementById("Container-4").innerHTML = Test
-    // }
-
-
-
-
     DD.map((items) => {
       let Poster_Anime = items.coverImage.extraLarge
       let Name_Anime = items.title.romaji
       // let EP = items.episodes
+      let Year = items.startDate.year
+      let status = items.status
+      let season = items.season
+      let avg = items.averageScore
       let gen = items.genres
-      console.log(gen)
-      // console.log(items)
+      console.log(status)
+      console.log(Year)
+      console.log(season)
+      console.log(avg)
       let Pic_Container = ` 
       <div class="Holder card">
       <div class="card__content">
       <p class="card__title">${Name_Anime}</p>
-      <p class="card__description"></p>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eos minus sapiente esse, illum tenetur beatae doloremque commodi accusantium impedit rem consequatur quisquam ullam ipsa ea iure reiciendis, reprehenderit rerum.</p>
+      <p class="card__Status extra"><b>Status:</b> ${status} , ${season} ${Year}</p>
+      <p class="card__Gen extra"><b>Genre:</b> ${gen[1] || gen[0] || gen[2] || gen[3]}, ${gen[0]}, ${gen[2]} </p>
+      <p class="card__Popularity extra"><b>Popularity:</b> ${avg} &#128516 </p>
+
     </div>
     <div class="IMGholder" style="background-image: url(${Poster_Anime});">
     </div>
