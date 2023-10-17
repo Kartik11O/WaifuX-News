@@ -28,7 +28,11 @@ query ($page: Int, $perPage: Int, $search: String) {
           }
         }
           
-       
+        studios(isMain: true) {
+          nodes {
+            name
+          }
+        }
          
         startDate {
             year
@@ -51,7 +55,7 @@ query ($page: Int, $perPage: Int, $search: String) {
         popularity
         averageScore
         season
-        
+        siteUrl
       }
     }
   }
@@ -82,10 +86,10 @@ let ListApi = fetch('https://graphql.anilist.co', {
 })
 ListApi.then((DataReq) => DataReq.json())
   .then((VV) => {
-    console.log(VV)
+    // console.log(VV)
     let DD = VV.data.Page.media
     let banner = VV.data.Page.media[1].bannerImage
-    console.log(banner)
+    // console.log(banner)
     DD.map((items) => {
       let Poster_Anime = items.coverImage.extraLarge
       let Name_Anime = items.title.romaji
@@ -95,10 +99,6 @@ ListApi.then((DataReq) => DataReq.json())
       let season = items.season
       let avg = items.averageScore
       let gen = items.genres
-      console.log(status)
-      console.log(Year)
-      console.log(season)
-      console.log(avg)
       let Pic_Container = ` 
       <div class="Holder card">
       <div class="card__content">

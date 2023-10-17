@@ -1,11 +1,11 @@
 .Holder{
-    width: 16vw;
+  width: clamp(245px,16vw,245px);
     height: max-content;
 }
 
 .IMGholder{
-    width: 16vw;
-    height: 46vh;
+  width: clamp(245px,16vw,245px);
+  height: clamp(343px,46vh,343px);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

@@ -1,10 +1,7 @@
 #SEC-4{
     position: relative;
     width: clamp(300px,100%,100%);
-    height: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100vh;
     background-color: #E2DFD2;
 }
 
@@ -14,8 +11,8 @@
     /* border: 2px solid black; */
 }
 
-#Cover-Img{
-    width: 100%;
-    height: max-content;
-border: 2px solid pink;
+#SS{
+    /* width: 10vw;
+    height: 10vh;
+border: 2px solid pink; */
 }

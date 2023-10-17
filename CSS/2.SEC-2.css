@@ -1,19 +1,19 @@
 #SEC-2{
     position: relative;
     width: clamp(300px,100%,100%);
-    height: 138vh;
+    height: max-content;
     display: flex;
     align-items: center;
     flex-direction: column;
     /* background-color: #a38a3c; */
-    background: #E2DFD2;
-    /* background: #F9F6EE; */
+    /* background: #E2DFD2; */
+    background: #F9F6EE;
 }
 
 .Trending-Container{
     position: relative;
     width: 100%;
-    height: 19vh;
+    height: clamp(129px,19vh,129px);
     display: flex;
     align-items: center;
 }
@@ -34,8 +34,8 @@
 }
 
 #Row-1{
-    width: 95vw;
-    height: 55vh;
+    width: clamp(300px,95vw,1459px);
+    height: max-content;
     display: flex;
     gap: 50px;
     align-items: center;
@@ -45,7 +45,8 @@
 
 .Line{
     position: absolute;
-    width: 93%;
+    top: 31%;
+    width: 90%;
     height: 6px;
     background-color: #080808;
 
@@ -53,7 +54,7 @@
 .Line2{
     position: absolute;
     bottom: 235px;
-    width: 93%;
+    width: 90%;
     height: 6px;
     background-color: #ED760E;
 
