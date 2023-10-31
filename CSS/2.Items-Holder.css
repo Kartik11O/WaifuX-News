@@ -87,10 +87,25 @@
     font-size: 15px;
     color: #000000;
     line-height: 1.4;
+    height: 200px;
+    overflow-y: scroll;
   }
 
-  .extra{
-    /* margin-bottom: 0px; */
-    /* margin-top: 13px; */
+  .extra1{
+    margin: 0;
+    margin-top: 17px !important;
   }
   
+  .extra2{
+    margin: 0;
+ 
+  }
+  
+  .extra3{
+    margin: 0;
+  
+  }
+  
+  .ALL{
+    margin-top: 7px;
+  }

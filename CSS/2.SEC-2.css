@@ -25,6 +25,29 @@
     border-bottom: 2px solid black;
 }
 
+.View{
+    position: absolute;
+    right: 0;
+    margin-right: 4rem;
+    border: solid black 2px;
+    background-color: 	#FEE561;
+    color: #000000;
+    border-radius: 4rem;
+    width: 7vw;
+    height: 5vh;
+    font-size: 1rem;
+    transition: 0.3s;
+    font-family: var(--Headline);
+    font-weight: 800;
+    cursor: pointer;
+}
+.View:hover {
+    transition: 0.3s;
+    transform: translateX(-8px) translateY(8px);
+    box-shadow: 1px -1px #000000, 2px -2px #000000, 3px -3px #000000, 4px -4px #000000, 5px -5px #000000, 6px -6px #000000, 7px -7px #000000, 8px -8px #000000;
+}
+
+
 #Trending-info-wapper{
     width: 100%;
     height: 100%;
@@ -59,3 +82,4 @@
     background-color: #ED760E;
 
 }
+

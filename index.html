@@ -10,6 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Work+Sans&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="CSS/1.css" />
 <link rel="stylesheet" href="CSS/2.SEC-2.css">
@@ -18,7 +20,9 @@
 <link rel="stylesheet" href="CSS/Nav_Video.css">
 <link rel="stylesheet" href="CSS/2.Items-Holder.css">
 <link rel="stylesheet" href="CSS/Root.css">
-
+<link rel="stylesheet" href="CSS/Show_Container.css">
+<link rel="stylesheet" href="CSS/footer.css">
+<link rel="stylesheet" href="CSS/SEC-1D-2.css">
 
 <body>
   <main id="main">
@@ -30,51 +34,45 @@
       <div class="one"></div>
   </div> -->
     <section id="SEC-1">
-      <nav id="Navbar">
-        <div id="Navbox-1">
-          <h2 id="WX">WX</h2>
+      <div id="Navbar">
+        <Nav>
+
+        </Nav>
+
+        <div id="Headline">
+          <h1 id="Headline11">Detorrex</h1>
         </div>
-        <div id="Navbox-2">
-          <ul id="NavUi">
-            <li class="NavLi"><a class="NavA" href="">About</a></li>
-            <li class="NavLi"><a class="NavA" href="">Waifu</a></li>
-            <li class="NavLi"><a class="NavA" href="">Github</a></li>
+
+        <div id="Icons">
+          <ul id="UL__I">
+            <li class=" LI__I"> <a href="" class="fa fa-github"></a> </li>
+            <li class=" LI__I"> <a href="" class="fa fa-linkedin"></a> </li>
+            <li class=" LI__I"> <a href="" class="fa fa-instagram"></a> </li>
+            <li class=" LI__I"> <a href="" class="fa fa-envelope"></a> </li>
           </ul>
-        </div>
-        <div id="Navbox-3">
-          <ul id="UL1">
-            <li class="LI1">
-              <a href="" class="fa fa-github"></a>
-            </li>
-            <li class="LI1">
-              <a href="" class="fa fa-linkedin"></a>
-            </li>
-            <li class="LI1">
-              <a href="" class="fa fa-envelope"></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div id="Video-TOP-Wapper">
-        <video src="CSS/VIdeo/4K anime.mov" playsinline preload="auto" loop="true" autoplay="true" muted></video>
-      </div>
-      <div id="Headline-TOP-Wapper">
-        <div id="Box1">
-          <h2 class="h2-Headline-TOP">アニメ</h2>
-        </div>
-        <div id="Box2">
-          <h1>trEndSX</h1>
-        </div>
-        <div id="Box3">
-          <h2 class="h2-Headline-TOP">エロアニメ</h2>
         </div>
       </div>
 
+      <div id="Search__Bar__Container">
+        <div id="Headline-1__Wapper">
+          <h1> Search </h1>
+          <div id="S_Box">
+            <input type="text" id="Search_bar" type="text" class="inputSearchField" placeholder="Search Anime!!">
+          </div>
+          <button id="myBtn">Search!</button>
+        </div>
+
+        <div id="Show1_Container">
+          <div id="NavS"></div>
+        </div>
+
+      </div>
     </section>
 
     <section id="SEC-2">
       <div class="Trending-Container">
         <h2 class="Trending">tRending Anime</h2>
+        <button class="View" > View More</button>
       </div>
 
       <div id="Trending-info-wapper">
@@ -85,13 +83,14 @@
       </div>
 
     </section>
-<!-- Type Animwe -->
+    <!-- Type Animwe -->
 
 
 
     <section id="SEC-3">
       <div class="Trending-Container">
         <h2 class="Trending">tRending Manga</h2>
+        <button class="View" > View More</button>
       </div>
 
       <div id="Trending-info-wapper-2">
@@ -99,24 +98,19 @@
       </div>
 
     </section>
-<!-- Type Manga -->
+    <!-- Type Manga -->
 
 
 
 
 
 
-<!-- Bar -->
+    <!-- Bar -->
     <section id="SEC-4">
-      <div id="Container-4">
-       <input id="SSS" class=" inputSearchField" type="text" >
-       <button id="go" > go</button>
-      </div>
-      <div id="app" style="width: 100vh; height: 100vh;"></div>
-
-
     </section>
-
+    <footer id="footer">
+      <h4 id="h4"> Created by - Raghav Shrivastava</h4>
+    </footer>
 
   </main>
 
@@ -124,14 +118,12 @@
   <script src="JS/Type_Anime.js"></script>
   <script src="JS/Type-Manga.js"></script>
   <script src="JS/Type_Search.js"></script>
-  <!-- <script src="d.js"></script> -->
+  <script src="JS/SearchAnimation.js"></script>
+  <!-- <script src="TvMaze.js"></script> -->
 </body>
 
 </html>
 
-<!-- // https://api.waifu/.pics/many/sfw/hug
-// https://api.waifu.pics/sfw/hug -->
-<!-- A place to find exquisite waifu -->
 
 
 <!-- <div class="Holder card">
@@ -153,3 +145,4 @@
    <span class="Anime-GEN">Action</span>
 h2#
 </div> -->
+<!-- <span class="Show_gen"> action</span> <span class="Show_gen"> action</span> -->

@@ -1,0 +1,11 @@
+#IMG__Cover{
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+    height: 69vh;
+    background-image: url(wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-position: 0% 47%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
