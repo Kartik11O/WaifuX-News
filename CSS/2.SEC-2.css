@@ -1,6 +1,6 @@
-#SEC-2{
+#SEC-2 {
     position: relative;
-    width: clamp(300px,100%,100%);
+    width: clamp(300px, 100%, 100%);
     height: max-content;
     display: flex;
     align-items: center;
@@ -10,27 +10,27 @@
     background: #F9F6EE;
 }
 
-.Trending-Container{
+.Trending-Container {
     position: relative;
     width: 100%;
-    height: clamp(129px,19vh,129px);
+    height: clamp(129px, 19vh, 129px);
     display: flex;
     align-items: center;
 }
 
-.Trending{
+.Trending {
     font-size: 3rem;
     font-family: 'Major Mono Display', monospace;
     margin-left: 2rem;
     border-bottom: 2px solid black;
 }
 
-.View{
+.View {
     position: absolute;
     right: 0;
     margin-right: 4rem;
     border: solid black 2px;
-    background-color: 	#FEE561;
+    background-color: #FEE561;
     color: #000000;
     border-radius: 4rem;
     width: 7vw;
@@ -41,6 +41,7 @@
     font-weight: 800;
     cursor: pointer;
 }
+
 .View:hover {
     transition: 0.3s;
     transform: translateX(-8px) translateY(8px);
@@ -48,16 +49,16 @@
 }
 
 
-#Trending-info-wapper{
+#Trending-info-wapper {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    
+
 }
 
-#Row-1{
-    width: clamp(300px,95vw,1459px);
+#Row-1 {
+    width: clamp(300px, 95vw, 1459px);
     height: max-content;
     display: flex;
     gap: 50px;
@@ -66,7 +67,7 @@
     justify-content: center;
 }
 
-.Line{
+.Line {
     position: absolute;
     top: 31%;
     width: 90%;
@@ -74,7 +75,8 @@
     background-color: #080808;
 
 }
-.Line2{
+
+.Line2 {
     position: absolute;
     bottom: 235px;
     width: 90%;
@@ -83,3 +85,66 @@
 
 }
 
+/* View-Container */
+#SEC-4{
+    position: relative;
+    width: 90vw;
+    height: max-content;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.View__More-Container {
+    position: relative;
+    width: 100%;
+    height: min-content;
+    background-color: #F9F6EE;
+    z-index: 23;
+    display: none;
+}
+
+.View-Back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background: #000000;
+    color: #fff;
+    border: none;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 0px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 13px;
+}
+
+.View-Back:hover {
+    background-color: #ED760E;
+}
+
+#Headline-2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 14vh;
+    background: black;
+}
+#Row-3 {
+position: relative;
+    width: clamp(300px, 95vw, 1459px);
+    height: min-content;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8rem;
+    /* margin-bottom: 1rem; */
+}

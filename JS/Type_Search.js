@@ -1,10 +1,6 @@
 
-// $("#myBtn").on('click' , async function show1({target}) {
-
-// console.log(show1)
-// let inputSearchField = document.querySelector('inputSearchField').value
-// inputSearchField.addEventListener('keypress', show1(value))
-  async  function show1 ({target}) {
+function show1({ target }) {
+  console.log(target)
   var query = `
   query ($page: Int, $perPage: Int, $search: String) {
       Page(page: $page, perPage: $perPage) {
@@ -72,18 +68,16 @@
       }
     }
   `
-  
-
-var variables = {
-  search: target.value,
-  // id: 15125,
-  page: 1,
-  perPage: 50
-};
+  var variables = {
+    search: target,
+    id: 15125,
+    page: 1,
+    perPage: 50
+  }
 
 
   // /search/anime?search=naruto
-  let SS = fetch (`https://graphql.anilist.co/search/anime?q=${target.value}`, {
+  const SS = fetch(`https://graphql.anilist.co/search/anime?q=${target.value}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -96,16 +90,17 @@ var variables = {
         Type: 'Anime'
       }
     })
-    
+
   })
+
   console.log(target.value)
   SS.then((reqq) => reqq.json())
     .then((gett) => {
-      console.log(gett)
       let details = gett.data.Page.media
       console.log(details)
       details.map((items4) => {
         let imagee = items4.coverImage.extraLarge
+        let nameE = items4.title.english
         let namee = items4.title.romaji
         let des = items4.description
         let avg = items4.averageScore
@@ -117,15 +112,15 @@ var variables = {
         let eday = items4.endDate.day
         let emonth = items4.endDate.month
         let eyear = items4.endDate.year
-        $('.Show_About').each(function() {
+        $('.Show_About').each(function () {
           $(this).html($(this).html().split('<br>')[0]);
         });
-        let container = 
+        let container =
           `
-          <div id="Show_Container">
+          <div class="Show_Container">
         <div id="Show_Img" style=" background-image: url(${imagee});"></div>
         <div id="Show_details">
-          <h2 class="Show_Names">${namee}</h2>
+          <h2 class="Show_Names">${nameE || namee}</h2>
           <p class="Show_About">${des}</p>
           <p class="Show_info"><b>Average Score:</b> ${avg} &#128516</p>
           <p class="Show_info"><b>Status:</b> ${status}</p>
@@ -139,44 +134,51 @@ var variables = {
         document.getElementById("Show1_Container").innerHTML += container
       })
     })
-    
 
-// })
+
+
 }
 
-
-
-document.getElementById("Search_bar").addEventListener("keypress" , show1)
-
-
-
-// var input = document.getElementById("Search_bar")
-// input.addEventListener("keypress",function(event) {
-//   if (event.key === "Enter" ) {
-//     input.value,show1
-//     event.preventDefault();
-//     document.getElementById("myBtn")
-//     console.log("pressed")
-//   }
-// })
+let userInput = document.getElementById("Search_bar")
+let target = userInput.value
+let searchBtn = document.getElementById("myBtn").addEventListener('click', show1)
 
 
 
 
 
+userInput.addEventListener('keypress', event => {
+  if (event.key === 'Enter') {
+    const target = userInput.value;
+
+    $(".Show_Container").remove() // This will Remove the element inside
+    if (target) {
+      show1({ target });
+    }
+  }
+});
 
 
 
 
-// document.getElementById("Search_bar").addEventListener("keypress" , function(e){
-//   var key = e.which;
-//   if(key == 13)
-//   {
-//     $('input[name = butAssignProd]').click();
-//     console.log("dd")
-//     return false;  
-//   }
-// } )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

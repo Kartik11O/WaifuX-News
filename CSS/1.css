@@ -3,12 +3,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: #E2DFD2;
+    background-color: #F9F6EE;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 13px;
 }
 
 /* Track */
@@ -69,10 +69,25 @@ body {
     z-index: 101;
     margin-bottom: 132px;
 }
-.Show_1Classes{
-     animation: test 0.8s both;
+
+.Show_1Classes-Remove{
+     animation: Closings 0.8s both;
 }
-@keyframes test {
+@keyframes Closings{
+    0%{
+        width: 97vw;
+        height: 97vh;
+    }
+    100%{
+        opacity: 0;
+        width: 0vw;
+        height: 0vh;
+    }
+}
+.Show_1Classes{
+    animation: Opening 0.8s both;
+}
+@keyframes Opening {
     0%{
         /* opacity: 0; */
         width: 0vw;
@@ -153,11 +168,38 @@ body {
 }
 
 #myBtn{
+    position: relative;
     width: 8vw;
     height: 5vh;
     border: none;
     border-radius: 12px;
     font-family: var(--Headline);
     font-size: 1.2rem;
-    display: none;
+    /* display: none; */
+    z-index: 103;
+    margin-left: 32rem;
+}
+#myBtn:hover{
+    background-color: red;
+}
+
+#Back{
+    position: absolute;
+    left: 0;
+    margin-left: 3rem;
+    background: #000000;
+    color: #fff;
+    border: none;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 0px;
+    border-radius: 4rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#Back:hover{
+    background-color: #fff;
+    color: #000000;
 }

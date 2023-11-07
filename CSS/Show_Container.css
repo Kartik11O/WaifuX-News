@@ -1,0 +1,85 @@
+.Show_Container{
+    width: 98%;
+    height: 55vh;
+    display: flex;
+    box-shadow: 85px 9px 6px -1px rgba(0,0,0,0.1), 0px 3px 11px -1px rgba(0,0,0,0.06);
+    border-radius: 25px;
+    animation: Loading 0.6s both ;
+}
+@keyframes Loading {
+    0%{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+}
+
+#Show_Img{
+    position: relative;
+    width: 38vh;
+    height: 100%;
+    background-image: url(https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx111322-2jQMDQva4YD7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px 0px 0px 25px;
+}
+
+#Show_details{
+    width: 90vw;
+    height: 100%;
+    border-radius: 0px 25px 25px 0px;
+
+}   
+
+.Show_Names{
+    font-family: var(--Headline);
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.Show_About{
+    margin-left: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    width: clamp(300px,90%,1125px);
+}
+
+.Show_info{
+    margin: 0;
+    margin-left: 1rem;
+    font-family: var(--Headline);
+    margin-bottom: 15px;
+}
+
+.Show_gen{
+    font-family: var(--Headline);
+}
+
+#loading2{
+    background-color: #000;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    /* display: none; */
+}
+
+#cir{
+    width: 50px;
+    height: 50px;
+    border: 10px solid #eee;
+    border-top: 10px solid #363b3e;
+    border-radius: 100%;
+    animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+    100% {
+      transform: rotate(360deg);
+    }
+  }

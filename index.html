@@ -57,22 +57,55 @@
         <div id="Headline-1__Wapper">
           <h1> Search </h1>
           <div id="S_Box">
-            <input type="text" id="Search_bar" type="text" class="inputSearchField" placeholder="Search Anime!!">
+            <input type="text" id="Search_bar" type="search" class="inputSearchField" placeholder="Search Anime!!">
           </div>
-          <button id="myBtn">Search!</button>
+
         </div>
 
         <div id="Show1_Container">
-          <div id="NavS"></div>
+          <div id="NavS">
+            <button id="myBtn">Search!</button>
+
+            <button id="Back"> <svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-arrow-big-left-lines" width="34" height="34" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M12 15v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h3v6h-3z">
+                </path>
+                <path d="M21 15v-6"></path>
+                <path d="M18 15v-6"></path>
+              </svg> </button>
+          </div>
+
         </div>
 
       </div>
     </section>
-
+    <section id="SEC-4">
+    <div id="View__More_Adder" class="View__More-Container">
+      <!-- <div id="headline-2"> -->
+      <button class="View-Back"> <svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-arrow-big-left-lines" width="34" height="34" viewBox="0 0 24 24"
+          stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M12 15v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h3v6h-3z">
+          </path>
+          <path d="M21 15v-6"></path>
+          <path d="M18 15v-6"></path>
+        </svg> </button>
+      <!-- </div> -->
+      <div id="Row-3">
+        <div class="Line"></div>
+        <div class="Line2"></div>
+      </div>
+    </div>
+  </section>
     <section id="SEC-2">
       <div class="Trending-Container">
         <h2 class="Trending">tRending Anime</h2>
-        <button class="View" > View More</button>
+        <button class="View"> View More</button>
       </div>
 
       <div id="Trending-info-wapper">
@@ -90,7 +123,7 @@
     <section id="SEC-3">
       <div class="Trending-Container">
         <h2 class="Trending">tRending Manga</h2>
-        <button class="View" > View More</button>
+        <button class="View"> View More</button>
       </div>
 
       <div id="Trending-info-wapper-2">
@@ -98,6 +131,7 @@
       </div>
 
     </section>
+
     <!-- Type Manga -->
 
 
@@ -106,8 +140,6 @@
 
 
     <!-- Bar -->
-    <section id="SEC-4">
-    </section>
     <footer id="footer">
       <h4 id="h4"> Created by - Raghav Shrivastava</h4>
     </footer>
@@ -119,6 +151,8 @@
   <script src="JS/Type-Manga.js"></script>
   <script src="JS/Type_Search.js"></script>
   <script src="JS/SearchAnimation.js"></script>
+  <script type="module" src="JS/View-More.js"></script>
+  <script type="module" src="components/Api.js"></script>
   <!-- <script src="TvMaze.js"></script> -->
 </body>
 
